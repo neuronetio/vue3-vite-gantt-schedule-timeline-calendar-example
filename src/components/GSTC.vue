@@ -100,11 +100,12 @@ export default {
     };
 
     state = GSTC.api.stateFromConfig(config);
-
+    globalThis.state = state;
     gstc = GSTC({
       element: this.$refs.gstc,
       state,
     });
+    globalThis.gstc = gstc;
   },
 
   beforeUnmount() {
