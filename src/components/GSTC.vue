@@ -67,7 +67,6 @@ export default {
     const gstcElement = ref(null);
 
     onMounted(() => {
-      console.log(gstcElement.value);
       /**
        * @type { import("gantt-schedule-timeline-calendar").Config }
        */
