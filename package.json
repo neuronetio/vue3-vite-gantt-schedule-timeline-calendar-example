@@ -7,7 +7,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "gantt-schedule-timeline-calendar": "^3.15.2",
+    "gantt-schedule-timeline-calendar": "^3.19.4",
     "vue": "^3.2.25"
   },
   "devDependencies": {
