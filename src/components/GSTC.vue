@@ -104,10 +104,13 @@ export default {
 
       state = GSTC.api.stateFromConfig(config);
       globalThis.state = state;
-      gstc = GSTC({
-        element: gstcElement.value,
-        state,
-      });
+      const element = gstcElement.value;
+      if (element) {
+        gstc = GSTC({
+          element,
+          state,
+        });
+      }
       globalThis.gstc = gstc;
     });
 
